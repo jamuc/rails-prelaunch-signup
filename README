@@ -17,3 +17,10 @@ ________________________
 License
 
 Contact the author for license terms.
+
+export TORQUEBOX_HOME=/Volumes/GitHub/torquebox-2.3.0
+export JBOSS_HOME=$TORQUEBOX_HOME/jboss
+export JRUBY_HOME=$TORQUEBOX_HOME/jruby
+export PATH=$JRUBY_HOME/bin:$PATH
+
+rake rails:template LOCATION=$TORQUEBOX_HOME/share/rails/template.rb
